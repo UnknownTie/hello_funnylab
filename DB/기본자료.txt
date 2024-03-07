@@ -1,0 +1,9 @@
+
+https://github.com/UnknownTie/hello_funnylab_DB.git
+
+data.json
+message.json
+log.json
+
+토큰
+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

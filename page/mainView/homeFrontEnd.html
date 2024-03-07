@@ -1,0 +1,104 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>프론트엔드</title>
+	
+		<link rel="stylesheet" type="text/css" href="./homeCss.css" > 
+		<style>
+			body{
+				background-color: rgb(240, 255, 240);
+			}
+		</style>
+	</head>
+<body>
+	
+		<main>
+
+		  <div class="swiper han1 visual" >
+		    <div class="swiper-wrapper">
+					<div class="swiper-slide slide">
+						<div class="title center"><h2>목 록</h2></div>
+						<div class="ProductBox Boxhover" onclick="location.href='#'; target='inFrame';"  >
+							<div  class="title" >
+								html 
+							</div>
+							<div  class="desc" >
+								html - 1
+							</div>
+							<div  class="photo" >
+								<img src="프론트엔드.png" style="width: 100%; height: 100%;"/>
+							</div>
+						</div>
+						<div class="ProductBox Boxhover" onclick="location.href='../jsView/home.html'; target='inFrame';"   >
+							<div  class="title" >
+								Js
+							</div>
+							<div  class="desc" >
+								Js  - 1
+							</div>
+							<div  class="photo" >
+								<img src="프론트엔드.png" style="width: 100%; height: 100%;"/>
+							</div>
+						</div>
+						<div class="ProductBox Boxhover" onclick="location.href='#'; target='inFrame';"   >
+							<div  class="title" >
+								jQuery
+							</div>
+							<div  class="desc" >
+								jQuery  - 1
+							</div>
+							<div  class="photo" >
+								<img src="프론트엔드.png" style="width: 100%; height: 100%;"/>
+							</div>
+						</div>
+				  </div>
+					<div class="swiper-slide slide">
+						<div class="title center"><h2>목 록</h2></div>
+						<div class="ProductBox Boxhover" onclick="location.href='#'; target='inFrame';"   >
+							<div  class="title" >
+								css 
+							</div>
+							<div  class="desc" >
+								css - 1
+							</div>
+							<div  class="photo" >
+								<img src="프론트엔드.png" style="width: 100%; height: 100%;"/>
+							</div>
+						</div>
+				  </div>
+		  	</div>
+				<div class="swiper-button-next"></div>
+	      <div class="swiper-button-prev"></div>
+	      <div class="swiper-pagination"></div>
+		  </div>
+	  </main>
+	</div>
+
+</body>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script>
+	  var swiper = new Swiper(".han1", {
+	    slidesPerView: 1,
+	    spaceBetween: 0,
+	    loop: true,
+	    pagination: {
+	      el: ".swiper-pagination",
+	      clickable: true,
+	    },
+	    navigation: {
+	      nextEl: ".swiper-button-next",
+	      prevEl: ".swiper-button-prev",
+	    },
+	  });
+	</script>
+
+</html>

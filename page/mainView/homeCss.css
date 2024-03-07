@@ -1,0 +1,53 @@
+body{
+	background-color: aliceblue;
+}
+  .ProductBox{
+		float: left;
+		position: relative; 
+		margin-left: 5%;
+		top:10%; height: 70%;
+		left: 2%; width: 25%;
+		background-color: #666;
+		cursor: pointer;
+	}
+	.viewBox{
+    background-color: #999;
+	}
+	.Boxhover:hover{
+		background-color: burlywood;
+	}
+	.center{
+		display: inline;
+		position: relative; 
+		left: 50%; transform: translatex(-50%);
+	}
+	.title{
+		font-size: 30px;
+	}
+  .ProductBox .title{
+			position: relative; 
+			padding: 2% 2%;
+			font-size: 30px;
+			left: 50%; transform: translatex(-50%);
+			width: 96%; height: 12%; 
+			background-color: #222;
+			color: #fff;
+	}
+	  .ProductBox .desc{
+			/* border: 3px solid black;  */
+			position: relative; 
+			padding: 2% 2%;
+			left: 50%; transform: translatex(-50%);
+			width: 96%; height: 11%; 
+
+			color: #fff;
+	}
+	  .ProductBox .photo{
+
+			position: relative; 
+
+			left: 50%; transform: translatex(-50%);
+			width: 100%; height: 55%; 
+	}
+
+

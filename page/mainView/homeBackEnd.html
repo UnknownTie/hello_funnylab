@@ -1,0 +1,112 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>백엔드</title>
+
+	<link rel="stylesheet" type="text/css" href="./homeCss.css" > 
+	<style>
+		body{
+			background-color: rgb(240, 240, 255);
+		}
+	</style>
+</head>
+
+<body>
+		<main>
+		  <div class="swiper han1 visual" >
+		    <div class="swiper-wrapper">
+					<div class="swiper-slide slide">
+						<div class="title center"><h2>목 록</h2></div>
+						<div class="ProductBox Boxhover" onclick="location.href='#'; target='inFrame';"  >
+							<div  class="title" >
+								JAVA 
+							</div>
+							<div  class="desc" >
+								JAVA - 1
+							</div>
+							<div class="photo" >
+								<img src="백엔드.png" style="width: 100%; height: 100%;"/>
+							</div>
+						</div>
+						<div class="ProductBox Boxhover" onclick="location.href='#'; target='inFrame';"   >
+							<div  class="title" >
+								MySQL
+							</div>
+							<div  class="desc" >
+								MySQL - 1
+							</div>
+							<div  class="photo" >
+								<img src="백엔드.png" style="width: 100%; height: 100%;"/>
+							</div>
+						</div>
+				 	</div>
+		  	</div>
+				<div class="swiper-button-next"></div>
+	      <div class="swiper-button-prev"></div>
+	      <div class="swiper-pagination"></div>
+		  </div>
+	  </main>
+	</div>
+
+</body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script>
+	  var swiper = new Swiper(".han1", {
+	    slidesPerView: 1,
+	    spaceBetween: 0,
+	    loop: true,
+	    pagination: {
+	      el: ".swiper-pagination",
+	      clickable: true,
+	    },
+	    navigation: {
+	      nextEl: ".swiper-button-next",
+	      prevEl: ".swiper-button-prev",
+	    },
+	  });
+	</script>
+
+<script>
+
+	function chtInput(){
+		console.log("세션");
+		let chat = $("#chat").val();
+		sessionStorage.setItem('myKey', chat ); // 문자열 저장
+
+		const myValue = sessionStorage.getItem('myKey'); // 'myValue' 반환\
+
+		document.getElementById('chat').value = '';
+		demo.innerHTML += "<br>" + myValue;
+
+	}
+
+			// HTML의 <script> 요소를 생성한다
+	const se = document.createElement('script');
+
+	// <script> 요소의 src 속성을 설정한다
+	se.src = 'https://ipinfo.io?callback=callback';
+	// 그리고 콜백 함수를 호출한다
+	document.body.appendChild(se);
+	// 앞서 생성한 <script> 요소를 제거한다
+	document.body.removeChild(se);
+
+  // 콜백 함수가 호출된다
+  function callback(data) {
+		demo.innerHTML += "나라 : " + data.country + "<br>";
+		demo.innerHTML += "지역 : " +  data.region+ "<br>";
+		demo.innerHTML += "위치 : " + data.loc+ "<br>";
+		demo.innerHTML += "ip : " + data.ip+ "<br>";
+		console.log(data);
+  }
+
+</script>
+</html>
